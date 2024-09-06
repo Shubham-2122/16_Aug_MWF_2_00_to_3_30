@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" align="center">
+        <div>
+            <label for="">Name :-</label>
+            <!-- pattern :- [a-zA-Z] -->
+            <!-- 5 to 9 char -->
+            <!-- <input type="text" pattern="[a-zA-Z]+" placeholder="Enter your Name" required> -->
+            <input type="text" pattern="[a-zA-Z]{5,8}"   placeholder="Enter your Name" required>
+        </div>
+        <div>
+            <label for="">Mobile no:-</label>
+            <!-- <input type="tel" pattern="[0-9]+" placeholder="Enter your number" required> -->
+            <input type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your number" required>
+        </div>
+
+        <div>
+            <label for="">Email ;-</label>
+            <!-- <input type="tel" pattern="[0-9]+" placeholder="Enter your number" required> -->
+             <!-- shubhamjadav.tops@gmail.com -->
+              <!-- [a-zA-Z.$]+@+[a-zA-z]+.+[a-zA-Z]{2,3}$ -->
+            <input type="email" pattern=""   placeholder="Enter your Eamil" required>
+        </div>
+
+        <div>
+            <label for="">Quntiy ;-</label>
+            <!-- <input type="tel" pattern="[0-9]+" placeholder="Enter your number" required> -->
+            <input type="number" pattern="[0-9]+" min="1" max="6"  placeholder="Enter your Quntiy" required>
+        </div>
+
+        <div>
+            <label for="">Password ;-</label>
+            <!-- <input type="tel" pattern="[0-9]+" placeholder="Enter your number" required> -->
+            <input type="password" pattern="[a-zA-Z0-9]{8,12}" minlength="8" maxlength="12"  placeholder="Enter your Password" required>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
