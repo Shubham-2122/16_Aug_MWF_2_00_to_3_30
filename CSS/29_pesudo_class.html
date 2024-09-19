@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul li:first-child{
+            background-color: lightcoral;
+            color: white;
+        }
+        ul li:last-child{
+            background-color: blue;
+        }
+        ul li:nth-child(3){
+            background-color: red;
+        }
+        /* ul li:nth-child(odd){
+            background-color: green;
+        }
+        ul li:nth-child(even){
+            background-color: aqua;
+        } */
+        ul li:nth-last-child(3){
+            background-color: lawngreen;
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: .6s;
+            transform: rotate();
+        }
+        .main:hover{
+            background-color: lightcoral;
+            /* transform: rotate(180deg); */
+            /* transform: translate(100px,100px); */
+            border-radius: 50%;
+           
+        }
+        input{
+            border: none;
+        }
+
+        input:focus{
+            background-color: lightcoral;
+            border: 4px solid red;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- : class  -->
+    <!-- :: elements -->
+     <ul >
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+     </ul>
+
+
+     <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+     </ul>
+
+     <div class="main">
+
+     </div>
+
+     <input type="text" placeholder="Enter your name">
+</body>
+</html>
