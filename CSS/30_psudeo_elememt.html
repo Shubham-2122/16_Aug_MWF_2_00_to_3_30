@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* creted elememts */
+        ul li::first-letter {
+            background-color: red;
+        }
+        .main::first-line{
+            background-color: aqua;
+        }
+        .main::selection{
+            background-color: black;
+            color: white;
+        }
+        ul li::before{
+            content: "A";
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+        ul li::after{
+            content: "s";
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <div class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur in nisi cumque. Necessitatibus est id
+        placeat excepturi iure quos veniam eius, quam porro dicta, perspiciatis laboriosam fuga a pariatur. Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Commodi iusto vero est sunt provident ab hic, culpa accusantium
+        porro excepturi beatae quo laboriosam accusamus aperiam cum eius aliquam blanditiis laudantium. Lorem ipsum
+        dolor sit, amet consectetur adipisicing elit. Consectetur sequi fugit cumque nihil quisquam? Mollitia, ea! Totam
+        ipsa at minus laborum obcaecati libero. Quisquam voluptas harum, recusandae quidem aperiam facilis.
+    </div>
+</body>
+
+</html>
