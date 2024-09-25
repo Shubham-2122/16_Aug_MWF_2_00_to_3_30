@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            list-style: none;
+        }
+        .nav .nav-list{
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .nav-list .list{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 20px;
+            background-color: aqua;
+            list-style: none;
+        }
+        .list li{
+            color: red;
+        }
+        .nav-list:hover .list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-list">Home
+            <ul class="list">
+                <li>Home1</li>
+                <li>Home1</li>
+                <li>Home1</li>
+                <li>Home1</li>
+            </ul>
+        </li>
+        <li class="nav-list">About
+            <ul class="list">
+                <li>About1</li>
+                <li>About1</li>
+                <li>About1</li>
+                <li>About1</li>
+            </ul>
+        </li>
+        <li class="nav-list">Contact</li>
+        <li class="nav-list">Help</li>
+        <li class="nav-list">Service</li>
+    </ul>
+</body>
+</html>
